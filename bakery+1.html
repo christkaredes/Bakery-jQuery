@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Menu Select</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="bakery.js"></script>
+
+<video autoplay muted loop id="vupload">
+<source src="bakingcookies.mp4" type="video/mp4">
+</video>
+    
+<style type="text/css">
+    
+ #vupload 
+    {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    
+  #cart {
+    border: 2px solid black;
+    background-color: #ffca53;
+    height: 100px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+    
+
+  .content
+    {
+        width: 800px;
+        margin: auto;
+        background-color: rgba(255, 159, 48, 0.9);
+        position: absolute; 
+/*        absolute is needed to keep the content in front of the video*/
+        font-family: Arial;
+    }
+    
+  .customerinfo
+    {
+        width: 600px;
+        margin: auto;
+        background-color: rgba(255, 159, 48, 0.9);
+        position: absolute;
+        font-family: Arial;
+        float: left;
+    }
+    
+</style>
+</head>
+
+    
+<body>
+
+<div class="content">
+<h1 style="font-family:monospace">jQuery Bakery</h1>
+<h5>Click and drag items to the cart to purchase</h5>
+<div class="selection1">
+<!--<h2>Cakes</h2> -->
+<table>
+<tr>
+    <td><span style="font-weight: bold">Cakes:</span>
+    <ul id="cakes">
+        <li>Yellow Cake</li>
+        <li>Chocolate Cake</li>
+        <li>Marble Cake</li>
+    </ul>
+        
+    </td>
+    
+    <td><span style="font-weight: bold">Pretzels:</span>
+    <ul id="pretzels">
+    <li>Salted Pretzel</li>
+    <li>Unsalted Pretzel</li>
+    <li>Chocolate Dipped Pretzel</li>
+    </ul>
+    </td>
+    
+    <td><span style="font-weight: bold">Breads:</span>
+    <ul id="breads">
+    <li>White Bread</li>
+    <li>Whole Bread</li>
+    <li>French Bread</li>
+    </ul>
+    </td>
+    
+    <td><span style="font-weight: bold">Cookies:</span>
+    <ul id="cookies">
+    <li>Oatmeal Cookie</li>
+    <li>Chocolate Chip Cookie</li>
+    <li>Sugar Cookie</li>
+    </ul>
+    </td>
+    
+</table>
+
+<!--CART-->
+<h2>Cart</h2>
+
+<ul id="cart">
+
+</ul>
+    
+ <p>
+
+<input type="button" value="Check out the ingredients" id="mixButton" />
+   
+</p>
+    
+<form action="survey.html"><input type="submit"></form>
+
+<p id="amount"></p>
+</div>
+    </div>
+</body>
+</html>

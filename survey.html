@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Bakery Form</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script src="survey.js"></script>
+
+</head>
+
+<style>
+    
+.note 
+    {
+        width: 150px;
+        background-color: #ff78c6;
+        border: solid black 1px;
+        padding: 5px;
+
+    }
+    
+    .content{
+        background-color: #f96dff;
+        width: 600px;
+        margin: auto;
+        background-color: rgba(255, 191, 145, 0.79);
+    }
+    
+body 
+    {
+        background-color: #fb95ff;
+        background:url("bakerywallpaper.jpg")no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+</style>
+
+<body>
+  <div id="content" class="content">
+  <h1 style="text-align: center">Customer Survey</h1>
+
+  <form>
+      
+    <p>
+      <label for="rating">What would you rate your experience?</label><br />
+        
+      <input type="radio" name="rating" id="excellent" value="excellent" />
+      <label for="excellent">Excellent</label><br />
+        
+      <input type="radio" name="rating" id="aboveAverage" value="aboveAverage" />
+      <label for="aboveAverage">Above Average</label><br />
+        
+      <input type="radio" name="rating" id="fair" value="fair" />
+      <label for="fair">Fair</label><br />
+        
+
+      <input type="radio" name="rating" id="belowAverage" value="belowAverage" />
+      <label for="belowAverage">Below Average</label><br />
+        
+      <input type="radio" name="rating" id="poor" value="poor" />
+      <label for="poor">Poor</label><br />
+
+    </p>
+      
+    <p>
+      <label for="favorite">What is your favorite product?</label>
+        <br>
+      <input type="radio" name="favorite" id="cakes" value="cakes" />
+      <label for="cakes">Cakes</label><br />
+
+      <input type="radio" name="favorite" id="pretzels" value="pretzels" />
+      <label for="pretzels">Pretzels</label><br />
+    
+      <input type="radio" name="favorite" id="breads" value="breads" />
+      <label for="breads">Breads</label><br />
+        
+      <input type="radio" name="favorite" id="cookies" value="cookies" />
+      <label for="cookies">Cookies</label><br />
+        
+      <input type="radio" name="favorite" id="none" value="none" />
+      <label for="none">I have no favorite</label><br />
+    </p>
+      
+    <p>
+      <label for="recommend">Would you recommend our services?</label>
+        <br>
+      <input type="radio" name="recommend" id="yes" value="yes" />
+      <label for="yes">Yes</label><br />
+
+      <input type="radio" name="recommend" id="no" value="no" />
+      <label for="no">No</label><br />
+    
+
+    <p id="noRecommend">We're sorry to hear that. What can we do to improve?
+        <textarea rows="4" cols="65"></textarea>
+    </p>
+      
+    <p id="yesRecommend">We're happy to hear that! Thank you! What can we do to improve?
+        <textarea rows="4" cols="65"></textarea>
+    </p>
+      
+    <p id = "needRating">Please give us a rating!</p>
+    <p id = "needFavorite">Please let us know about your favorite product!</p>
+    <p id = "needRecommend">Do you recommend us or not?</p>
+    <p>
+      <input type="submit" />
+    </p>
+
+  </form>
+  </div>
+</body>
+</html>
