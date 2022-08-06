@@ -19,7 +19,7 @@ $(function() {
     
     
      $("#backButton").click(function () {
-     window.location.href = "bakery+1.html";
+     window.location.href = "index.html";
          
         });
     
