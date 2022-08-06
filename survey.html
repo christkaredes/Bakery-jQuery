@@ -47,7 +47,12 @@ body
 <body>
   <div id="content" class="content">
   <h1 style="text-align: center">Customer Survey</h1>
-
+<!--
+This used to be able to send the survey answers to a server to view later, but now it does not.
+Instead, it just reloads the page. I added a "back to cart" button, so that the user would not get stuck 
+on the survey page. The <form> tag would look like the code below if it did send information to a server:
+<form action="http://abc.php" method="post">
+-->
   <form>
       
     <p>
@@ -114,6 +119,10 @@ body
     <p>
       <input type="submit" />
     </p>
+
+    <br>
+    
+    <input type="button" value="Back to Cart" id="backButton" />
 
   </form>
   </div>
